@@ -46,5 +46,7 @@ This repository contains steps for installing ROS. There are plenty of other met
           rosdep update
              
              
-             
+ If you executed all these commands without any errors popping up then ROS was sucessfully installed.  
+ 
+ For a more indepth explanations what all these commands do visit: http://wiki.ros.org/noetic/Installation/Ubuntu
 
