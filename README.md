@@ -46,7 +46,7 @@
           rosdep update
              
              
- If you executed all these commands without any errors popping up then ROS was sucessfully installed.  
+ If you executed all these commands without any errors popping up then ROS has been sucessfully installed.  
   
  For a more indepth explanations what all these commands do visit: http://wiki.ros.org/noetic/Installation/Ubuntu <br /> <br /> <br /> <br /> <br /> <br />
  
@@ -55,10 +55,36 @@
  
  
  # FOR JETSON-NANO: 
-  I would like to preface this by saying that I do not own a Jetson-Nano computer. This part of the guide is based off research and not actual testing. Jetson-Nano comes with Ubuntu 18.04 pre-installed. That means that Installing ROS2 off the bat is not an option since ~~ROS2 only supports Ubuntu versions 20~~. It is possible however to upgrade to version 20.04. With that being said, that's not my goal here, my goal is a quick and easy way to install ROS on the Jetson-Nano. That is why this guide will cover the installation of ROS1 on the Jetson-Nano and not ROS2. A link will be pasted at the end of this thread that will take you to an excellent guide by Q-Engineering that covers that very topic.
+  I would like to preface this by saying that I do not own a Jetson-Nano computer. This part of the guide is based off research and not actual testing. Jetson-Nano comes with Ubuntu 18.04 pre-installed. That means that Installing ROS2 off the bat is not an option since ~~ROS2 only supports Ubuntu versions 20+~~. It is possible however to upgrade to version 20.04. With that being said, that's not my goal here, my goal is a quick and easy way to install ROS on the Jetson-Nano. That is why this guide will cover the installation of ROS1 on the Jetson-Nano and not ROS2. A link will be pasted at the end of this thread that will take you to an excellent guide by Q-Engineering that covers that very topic.
 
 Edit: It is possible to install ROS2 on Ubuntu 18.04 however, All ROS2 versions that can be installed on Ubuntu 18.04 have reached their __EOL__ (end-of-life). Even though it's possible, it's not recommended since security updates and the like no longer take place on those versions.
 
 
-ROS2 for the JETSON-NANO: 
+#### ROS1 (Melodic) Installation STEPS:
+
+  After you get into the Jetson-Nano and all Ubuntu is set up and ready to go, open the CMD and paste these instructions line after line: 
+
+    1 - sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
+    2 - sudo apt install curl
+    3 - curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
+    4 - sudo apt update
+    5 - sudo apt install ros-melodic-desktop-full
+    6 - echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc
+        source ~/.bashrc
+    7 - sudo apt install python-rosdep python-rosinstall python-rosinstall-generator python-wstool build-essential
+    8 - sudo apt install python-rosdep
+    9 - sudo rosdep init
+        rosdep update
+  
+  If you executed all these commands without any errors popping up then ROS has been sucessfully installed.   
+  
+  Now all is good, but that doesn't mean that you can start working on it immediately, you first have to create a workspace. <br />
+  Refer to this: http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment#Create_a_ROS_Workspace. <br />
+  
+  After that you are free to begin working on your projects.
+  
+  
+
+
+ROS2 for the JETSON-NANO: <br />
 https://qengineering.eu/install-ubuntu-20.04-on-jetson-nano.html#:~:text=You%20can%20do%20this%20by,upgrade%20and%20clean%20your%20system.&text=Next%2C%20you%20need%20to%20enable,manager%2Frelease-upgrades%20file.
