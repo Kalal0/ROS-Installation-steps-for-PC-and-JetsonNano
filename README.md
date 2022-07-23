@@ -62,7 +62,7 @@ Edit: It is possible to install ROS2 on Ubuntu 18.04 however, All ROS2 versions 
 
 #### ROS1 (Melodic) Installation STEPS:
 
-  After you get into the Jetson-Nano and all Ubuntu is set up and ready to go, open the CMD and paste these instructions line after line: 
+  After you get into the Jetson-Nano and Ubuntu is set up and ready to go, open the CMD and paste these instructions line after line: 
 
     1 - sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
     2 - sudo apt install curl
