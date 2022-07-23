@@ -1,5 +1,5 @@
 # ROS-Installation-steps-for-PC-and-JetsonNano
-This repository contains steps for installing ROS. There are plenty of other methods for installing ROS and plenty of versions to go with it. However, These steps are based on my personal experience, so I will only cover the method that worked for me. The following installation steps were done on a computer running Windows 10. <br />
+  This repository contains steps for installing ROS. There are plenty of other methods for installing ROS and plenty of versions to go with it. However, These steps are based on my personal experience, so I will only cover the method that worked for me. The following installation steps were done on a computer running Windows 10. <br />
 
 # FOR PC: 
 
@@ -55,7 +55,9 @@ This repository contains steps for installing ROS. There are plenty of other met
  
  
  # FOR JETSON-NANO: 
-I would like to preface this by saying that I do not own a Jetson-Nano computer. This part of the guide is based off research and not actual testing. Jetson-Nano comes with Ubuntu 18.04 pre-installed. That means that Installing ROS2 off the bat is not an option since ROS2 only supports Ubuntu versions 20+. It is possible however to upgrade to version 20.04. With that being said, that's not my goal here, my goal is a quick and easy way to install ROS on the Jetson-Nano. That is why this guide will cover the installation of ROS1 on the Jetson-Nano and not ROS2. A link will be pasted at the end of this thread that will take you to an excellent guide by Q-Engineering that covers that very topic.
+  I would like to preface this by saying that I do not own a Jetson-Nano computer. This part of the guide is based off research and not actual testing. Jetson-Nano comes with Ubuntu 18.04 pre-installed. That means that Installing ROS2 off the bat is not an option since ~~ROS2 only supports Ubuntu versions 20~~. It is possible however to upgrade to version 20.04. With that being said, that's not my goal here, my goal is a quick and easy way to install ROS on the Jetson-Nano. That is why this guide will cover the installation of ROS1 on the Jetson-Nano and not ROS2. A link will be pasted at the end of this thread that will take you to an excellent guide by Q-Engineering that covers that very topic.
+
+Edit: It is possible to install ROS2 on Ubuntu 18.04 however, All ROS2 versions that can be installed on Ubuntu 18.04 have reached their __EOL__ (end-of-life). Even though it's possible, it's not recommended since security updates and the like no longer take place on those versions.
 
 
 ROS2 for the JETSON-NANO: 
